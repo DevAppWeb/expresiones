@@ -1,5 +1,7 @@
 <?php
 
+var_dump(5);
+
 //var_dump(2 + 4 + 5 + 8);
 //
 //var_dump(!!!true);
@@ -24,7 +26,7 @@
 //
 //var_dump("es " . (5 > 10 ? "verdad" : "mentira"));
 
-var_dump(match(1){1,2,3,4 => "No Apto", 5,6,7,8,9,10 => "Apto"});
+// var_dump(match(1){1,2,3,4 => "No Apto", 5,6,7,8,9,10 => "Apto"});
 
 
 
@@ -42,25 +44,27 @@ var_dump(match(1){1,2,3,4 => "No Apto", 5,6,7,8,9,10 => "Apto"});
 
 
 // Formula de perímetro de un reactangulo
-$b = 10;
-$a = 2;
-var_dump(($a + $b) * 2);
+//$b = 10;
+//$a = 2;
+//var_dump(($a + $b) * 2);
 
 
 // Formula gravitación universal
 
-define ("G", 6.674E-11);
-$m1 = 800;
-$m2 = 500;
-$d = 3;
-var_dump(G * $m1 * $m2 / $d ** 2);
+//define ("G", 6.674E-11);
+//$m1 = 800;
+//$m2 = 500;
+//$d = 3;
+//var_dump(G * $m1 * $m2 / $d ** 2);
 
 // Expresion para transformar una nota numérica en una cadena
-//$nota = 8;
-//var_dump(match($nota));
+$nota = 8;
+var_dump(match($nota) {1,2,3,4 => "Insuficiente", 5 => "Suficiente", 6 => "Bien", 7, 8 =>"Notable", 9, 10 =>"Sobresaliente"});
 // Expresión booleana que dice si un año es bisiesto
-$anyo = 2012;
-var_dump((anyo % 4 == 0 && anyo % 100 != 0) || year % 400 == 0);
+//$anyo = 2012;
+//var_dump(($anyo % 4 == 0 && $anyo % 100 != 0) || $anyo % 400 == 0);
 
-// Expresión que decide si una persona es mayor de edad o no dada su edad
+// Expresión que decide si una persona es mayor de edad o no dada su edad y deja el valor en la variable adulto
+$edad = 3;
+var_dump ($adulto = $edad > 18);
 
