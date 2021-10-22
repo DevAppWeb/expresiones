@@ -68,3 +68,5 @@ var_dump(match($nota) {1,2,3,4 => "Insuficiente", 5 => "Suficiente", 6 => "Bien"
 $edad = 3;
 var_dump ($adulto = $edad > 18);
 
+
+
